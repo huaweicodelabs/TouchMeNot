@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hwads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCardViewBackground"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/hiad_10_dp"
+        card_view:cardBackgroundColor="@color/colorHomeBackground"
+        card_view:cardCornerRadius="@dimen/di_10dp"
+        card_view:cardElevation="@dimen/di_8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/app_background">
+
+            <com.huawei.hms.ads.banner.BannerView
+                android:id="@+id/hw_banner_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                hwads:adId="testw6vs28auh3"
+                hwads:bannerSize="BANNER_SIZE_360_57" />
+
+            <TextView
+                android:id="@+id/tvSuggestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hw_banner_view1"
+                android:layout_marginTop="@dimen/di_60dp"
+                android:layout_marginBottom="@dimen/di_5dp"
+                android:gravity="center"
+                android:text="Blink your eyes to login"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="@dimen/si_25sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/cameraLayout"
+                android:layout_width="@dimen/di_300dp"
+                android:layout_height="@dimen/di_300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/di_300dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.huawei.touchmenot.java.hms.camera.CameraSourcePreview
+                            android:id="@+id/preview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.huawei.touchmenot.java.hms.camera.GraphicOverlay
+                                android:id="@+id/overlay"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </com.huawei.touchmenot.java.hms.camera.CameraSourcePreview>
+
+                        <ToggleButton
+                            android:id="@+id/facingSwitch"
+                            android:layout_width="@dimen/di_35dp"
+                            android:layout_height="@dimen/di_35dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/di_30dp"
+                            android:background="@drawable/faceingswitch"
+                            android:textOff=""
+                            android:textOn=""
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/eyeBlinkImgView"
+                android:layout_width="@dimen/di_180dp"
+                android:layout_height="@dimen/di_90dp"
+                android:layout_below="@id/cameraLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/di_30dp"
+                android:src="@drawable/eye_blink" />
+
+            <com.huawei.hms.ads.banner.BannerView
+                android:id="@+id/hw_banner_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                hwads:adId="testw6vs28auh3"
+                hwads:bannerSize="BANNER_SIZE_360_57" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

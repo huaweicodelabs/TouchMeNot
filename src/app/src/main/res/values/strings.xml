@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Touch me not</string>
+
+    <!--Ads string resource-->
+    <string name="ad_id_splash">Place_your_ads_test_id</string>
+    <string name="owner">HUAWEI Developer</string>
+    <string name="copyright_info">Copyright 2020. Huawei Technologies Co. Ltd</string>
+    <string name="status_load_ad_success">Ad loading state: loaded successfully.</string>
+    <string name="status_load_ad_fail">Ad loading state: failed to be loaded. Error code: </string>
+    <string name="status_ad_dismissed">Ad is dismissed.</string>
+
+    <string name="pref_key_camera_live_viewport" translatable="false">clv</string>
+    <string name="pref_key_rear_camera_preview_size" translatable="false">rcpvs</string>
+    <string name="pref_key_rear_camera_picture_size" translatable="false">rcpts</string>
+    <string name="pref_key_front_camera_preview_size" translatable="false">fcpvs</string>
+    <string name="pref_key_front_camera_picture_size" translatable="false">fcpts</string>
+
+    <string name="Information_permission">Obtaining related permissions: Camera permissions failed. Some functions cannot be used properly. You need to manually grant permissions on the settings page. </string>
+    <string name="go_authorization">Go Authorization</string>
+    <string name="toast">Grant the permission to experience the function.</string>
+    <string name="sample_title">Mysore Palace</string>
+    <string name="sample_address">Sayyaji Rao Rd, Agrahara, Chamrajpura, Mysuru, Karnataka 570001</string>
+    <string name="sample_poi_type1">Tourist Attraction</string>
+    <string name="sample_poi_type2">Capital</string>
+
+    <!--    AR Scrolling Related Strings starts-->
+    <string name="arengine_cancel" priority="translator">CANCEL</string>
+    <string name="arengine_install" priority="translator">INSTALL</string>
+    <string name="arengine_install_app" priority="translator">Install the latest version of HUAWEI AR Engine to continue.</string>
+    <string name="intro_AR" priority="translator">Use this Gestures to scroll, this will help you to scroll up and scroll down  </string>
+    <string name="intro_ASR" priority="translator">Hey!!  You no need to touch the screen, it will automatically recognize your voice and give you a reply </string>
+    <string name="intro" priority="translator">Simple application which experiences you with virtual reality. The App name itself tell us to not touch the screen </string>
+
+    <!--    AR Scrolling Related Strings ends-->
+
+    <string-array name="hotwords_setting_array">
+        <item>What is my name</item>
+        <item>My name is ________</item>
+        <item>Open Camera</item>
+        <item>Open Gallery</item>
+        <item>What is time</item>
+        <item>What is date</item>
+        <item>What today\'s weather</item>
+        <item>Search ________</item>
+        <item>Give feedback</item>
+    </string-array>
+
+    <string name="AR_NOT_SUPPORTING">AR ENGINE NOT SUPPORTED</string>
+    <string name="Setting_Permissions">Go to settings and enable permissions</string>
+    <string name="US_English">en-US</string>
+    <string name="Camera_Fail">Camera open failed, please restart the app</string>
+
+    <string name="SMILING">Smiling</string>
+    <string name="NEUTRAL">Neutral</string>
+    <string name="ANGRY">Angry</string>
+    <string name="FEAR">Fear</string>
+    <string name="SAD">Sad</string>
+    <string name="DISGUST">Disgust</string>
+    <string name="SURPRISE">Surprise</string>
+
+
+    <string name="Left_Eye">Left eye: </string>
+    <string name="Right_Eye">Right eye: </string>
+    <string name="Moutstache_Probability">Moustache Probability: </string>
+    <string name="DECIMAL_PATTERN">0.000</string>
+    <string name="GLASS_PROBABILITY">Glass Probability: </string>
+    <string name="HAT">Hat Probability: </string>
+    <string name="AGE">Age: </string>
+    <string name="GENDER">Gender: </string>
+    <string name="EULER_ANGLE_Y">EulerAngleY: </string>
+    <string name="EULER_ANGEL_Z">EulerAngleZ: </string>
+    <string name="EULER_ANGLE_X">EulerAngleX: </string>
+
+    <string name="fr">1 </string>
+    <string name="PACKAGE">package</string>
+    <string name="Cancel">Cancel</string>
+    <string name="point_list_size_new">point list size new  = </string>
+    <string name="point_list_size">point list size  = </string>
+    <string name="zero">0</string>
+    <string name="On_draw_frame_start">On draw frame start.</string>
+    <string name="On_draw_frame_end.">On draw frame end.</string>
+    <string name="java">Java</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="asr_txt">Hi, My Name is Manish</string>
+    <string name="name">What is your name</string>
+    <string name="touch_me_not">TOUCH ME NOT</string>
+</resources>

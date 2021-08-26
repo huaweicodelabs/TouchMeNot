@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/hiad_10_dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/di_20dp"
+        app:cardElevation="@dimen/di_0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/logo"
+                android:src="@drawable/logo">
+
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/logo"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/di_100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-3dp"
+                android:background="@android:color/black"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/di_39dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/di_6dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/di_30dp"
+                            android:layout_height="@dimen/di_30dp"
+                            android:background="@drawable/huawei" />
+
+                        <View
+                            android:layout_width="@dimen/di_3dp"
+                            android:layout_height="@dimen/di_18dp"
+                            android:layout_marginLeft="@dimen/di_12dp"
+                            android:layout_marginRight="@dimen/di_12dp"
+                            android:alpha="0.5"
+                            android:background="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="1"
+                            android:text="@string/owner"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/si_16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:alpha="0.5"
+                        android:text="@string/copyright_info"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/si_10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.huawei.hms.ads.splash.SplashView
+                android:id="@+id/splash_ad_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/logo" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

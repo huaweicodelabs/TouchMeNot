@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/speech"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/di_30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/di_10dp"
+        android:background="@drawable/button_bg"
+        android:padding="@dimen/di_5dp"
+        android:text="Start Speech"
+        android:textAllCaps="false"
+        android:textColor="@color/hiad_80_percent_white"
+        android:visibility="gone" />
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/handSurfaceview"
+        android:layout_width="@dimen/di_1dp"
+        android:layout_height="@dimen/di_1dp"
+        android:layout_below="@id/speech"
+        android:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/handRendereMangerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/di_30dp"
+        android:layout_below="@id/handSurfaceview"
+        android:layout_margin="@dimen/di_5dp"
+        android:fontFamily="@font/playfairdisplay1medium"
+        android:text="hghghg"
+        android:textColor="@android:color/black"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/mTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/di_30dp"
+        android:layout_below="@id/handRendereMangerTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/di_5dp"
+        android:fontFamily="@font/playfairdisplay1medium"
+        android:text="Start Speech"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="@dimen/si_15sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="@dimen/di_100dp"
+        android:layout_height="@dimen/di_100dp"
+        android:layout_below="@id/mTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/di_10dp"
+        android:background="@drawable/mic2"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:visibility="visible" />
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/waveLineView"
+        android:layout_below="@id/imgView"
+        android:layout_margin="@dimen/hiad_10_dp"
+        card_view:cardBackgroundColor="@color/colorHomeBackground"
+        card_view:cardCornerRadius="@dimen/di_100dp"
+        card_view:cardElevation="@dimen/di_8dp">
+
+        <LinearLayout
+            android:id="@+id/recyclerViewOuterLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorLinearBackground"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutAnimation="@anim/layout_animation" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.huawei.touchmenot.java.main.common.CustomWaveView
+        android:id="@+id/waveLineView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/di_80dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible" />
+</RelativeLayout>
+

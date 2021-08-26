@@ -1,0 +1,23 @@
+Software: viewanimator 
+Copyright 2015 florentchampigny 
+Copyright 2016 gzu-liyujiang
+License:Apache License Version 2.0
+
+Software: glide
+Copyright 2014 Google
+
+Software: Picasso
+Copyright 2013 Square, Inc.
+License:Apache Version 2.0
+
+Software: Volley
+Copyright 2013 Square, Inc.
+License:Apache Version 2.0
+
+Software: Gson
+Copyright 2013 Square, Inc.
+License:Apache Version 2.0
+
+Software: openweather api
+Copyright 2012 — 2020.
+License:Creative Commons Attribution-ShareAlike 4.0 International Public License and  Database Contents License (DbCL)

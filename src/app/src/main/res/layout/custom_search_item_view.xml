@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/hiad_5_dp"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_res_shape"
+        android:orientation="vertical"
+        android:padding="@dimen/di_10dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/playfairdisplay1medium"
+            android:text="@string/sample_title"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/si_16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/playfairdisplay1medium"
+            android:text="@string/sample_address"
+            android:textColor="@color/colorText"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/hiad_5_dp"
+                card_view:cardBackgroundColor="@color/colorCorner"
+                card_view:cardCornerRadius="@dimen/di_5dp">
+
+                <TextView
+                    android:id="@+id/tvPoi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/di_5dp"
+                    android:layout_marginEnd="@dimen/di_5dp"
+                    android:fontFamily="@font/playfairdisplay1mediumitalic"
+                    android:text="@string/sample_poi_type1"
+                    android:textColor="@color/colorText"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/hiad_5_dp"
+                card_view:cardBackgroundColor="@color/colorCorner"
+                card_view:cardCornerRadius="@dimen/di_5dp">
+
+                <TextView
+                    android:id="@+id/tvPoi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/di_5dp"
+                    android:layout_marginEnd="@dimen/di_5dp"
+                    android:background="@drawable/rect_shape"
+                    android:fontFamily="@font/playfairdisplay1mediumitalic"
+                    android:text="@string/sample_poi_type2"
+                    android:textColor="@color/colorText"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

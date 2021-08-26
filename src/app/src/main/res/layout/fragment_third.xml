@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/di_10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/di_20dp"
+        app:cardElevation="@dimen/di_0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/fragmentThreeBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/screen_background_dark_transparent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linear"
+                        android:layout_width="@dimen/di_350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/di_30dp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/di_20dp"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/di_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/scroll1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/di_220dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/scroll1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/di_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/scroll2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/di_220dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/scroll2" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/numberTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/di_50dp"
+                    android:fontFamily="@font/playfairdisplay1medium"
+                    android:gravity="center"
+                    android:text="Experience Augmented Reality"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/di_25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/wordTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/di_10dp"
+                    android:fontFamily="@font/playfairdisplay1medium"
+                    android:gravity="center"
+                    android:padding="@dimen/di_20dp"
+                    android:text="@string/intro_AR"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/di_20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

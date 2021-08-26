@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="di_100dp">100dp</dimen>
+    <dimen name="di_60dp">60dp</dimen>
+    <dimen name="di_30dp">30dp</dimen>
+    <dimen name="di_5dp">5dp</dimen>
+    <dimen name="di_1dp">1dp</dimen>
+
+    <dimen name="si_15sp">15sp</dimen>
+    <dimen name="di_10dp">10dp</dimen>
+    <dimen name="di_8dp">8dp</dimen>
+    <dimen name="di_80dp">80dp</dimen>
+    <dimen name="si_25sp">25sp</dimen>
+    <dimen name="di_300dp">300dp</dimen>
+    <dimen name="di_0dp">0dp</dimen>
+    <dimen name="di_35dp">35dp</dimen>
+    <dimen name="di_180dp">180dp</dimen>
+    <dimen name="di_90dp">90dp</dimen>
+    <dimen name="si_30sp">30sp</dimen>
+    <dimen name="si_16sp">16sp</dimen>
+    <dimen name="di_200dp">200dp</dimen>
+    <dimen name="di_20dp">20dp</dimen>
+    <dimen name="si_17dp">17sp</dimen>
+    <dimen name="si_17sp">17sp</dimen>
+    <dimen name="di_39dp">39dp</dimen>
+    <dimen name="di_6dp">6dp</dimen>
+    <dimen name="di_3dp">3dp</dimen>
+    <dimen name="di_18dp">18dp</dimen>
+    <dimen name="di_12dp">12dp</dimen>
+    <dimen name="si_10sp">10sp</dimen>
+    <dimen name="di_250dp">250dp</dimen>
+    <dimen name="di_16dp">16dp</dimen>
+    <dimen name="di_40dp">40dp</dimen>
+    <dimen name="di_350dp">350dp</dimen>
+    <dimen name="di_25dp">25dp</dimen>
+    <dimen name="di_220dp">220dp</dimen>
+    <dimen name="di_50dp">50dp</dimen>
+</resources>
